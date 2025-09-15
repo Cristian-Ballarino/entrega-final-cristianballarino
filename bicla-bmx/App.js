@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet } from 'react-native';
 import Header from './src/components/Header';
 import CategoriesScreen from './src/screens/CategoriesScreen';
+import ProductsScreen from './src/screens/ProductsScreen';
 
 
 export default function App() {
@@ -10,8 +11,9 @@ export default function App() {
     <>
       <StatusBar style="light" />
       <Header title="Bicla Bmx" />
-      <CategoriesScreen />
+      <ProductsScreen />
     </>
+      
   );
 }
       
@@ -23,4 +25,4 @@ const styles = StyleSheet.create({
     
   //},
 });
-//clase 4_0:55:00
+//clase 4_1:05:00
