@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Image} from 'react-native';
 import categories from './src/data/categories.json'
 import Header from './src/components/Header';
 import FlatCard from './src/components/FlatCard';
@@ -11,7 +11,7 @@ export default function App() {
     return (
    <FlatCard>
     <Text>{item.title}</Text>
-    <Image wigth={120} height={50} source={{uri: item.image}} resizeMode='contain' />
+    <Image width={120} height={50} source={{uri: item.image}} resizeMode='contain' />
    </FlatCard>
    
   )
@@ -36,4 +36,4 @@ const styles = StyleSheet.create({
     
   },
 });
-//clase 3 _2:08:10
+//clase 4_0:35:00
