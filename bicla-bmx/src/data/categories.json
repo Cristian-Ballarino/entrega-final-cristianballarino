@@ -1,0 +1,33 @@
+ [
+   { 
+    "id": 1,
+    "title": "BMX Pro X",
+   "image": "https://res.cloudinary.com/di21qbqnt/image/upload/e_improve/v1748490559/Bicycles_jdjqd5.jpg" 
+     },
+   { 
+    "id": 2, 
+    "title": "Speedster 3000", 
+    "image": "https://res.cloudinary.com/di21qbqnt/image/upload/e_improve/v1748492054/Legendary_BMX_Designer_Bob_Haro_is_Back_with_New_Ikonix_Brand_w0aiva.jpg" 
+    },
+   { 
+    "id": 3, 
+    "title": "Airborne Viper", 
+    "image": "https://res.cloudinary.com/di21qbqnt/image/upload/e_improve/v1748492258/dea48637-e0c8-48fc-90bd-0effe8e7f006_bbrcmx.jpg" 
+    },
+   
+   { 
+    "id": 4,
+    "title": "BMX Pro Xx",
+    "image": "https://res.cloudinary.com/di21qbqnt/image/upload/e_improve/v1748496620/ddb02d5f-7731-4f43-ac24-4f58853e0b4e_kkcqel.jpg" 
+    },
+   { 
+    "id": 5, 
+    "title": "Speedster 2000", 
+    "image": "https://res.cloudinary.com/di21qbqnt/image/upload/e_improve/v1748497828/20fe076d-94ec-444a-9601-52985d38070c_itm0n5.jpg" 
+    },
+   { 
+    "id": 6, 
+    "title": "Airborne Venom", 
+    "image": "https://res.cloudinary.com/di21qbqnt/image/upload/b_rgb:FFFFFF/e_improve/v1748496860/13_Best_BMX_Bikes_Brands_for_Racers_Tricksters_and_Flyers_m0uyzi.jpg" 
+    }
+ ]   
