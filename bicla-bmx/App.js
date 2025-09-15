@@ -1,39 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, FlatList, Image} from 'react-native';
-import categories from './src/data/categories.json'
+import { StyleSheet } from 'react-native';
 import Header from './src/components/Header';
-import FlatCard from './src/components/FlatCard';
+import CategoriesScreen from './src/screens/CategoriesScreen';
 
 
 export default function App() {
-  const renderCategoryItem = ({item})=> {
-    console.log(item)
-    return (
-   <FlatCard>
-    <Text>{item.title}</Text>
-    <Image width={120} height={50} source={{uri: item.image}} resizeMode='contain' />
-   </FlatCard>
-   
-  )
-}
+ 
   return (
-    <View style={styles.container}>
-      <Header title="Bicla Bmx" />
-      <FlatList
-      data={categories}
-      renderItem={renderCategoryItem}
-      keyExtractor={item=>item.id}
-      />
+    <>
       <StatusBar style="light" />
-    </View>
+      <Header title="Bicla Bmx" />
+      <CategoriesScreen />
+    </>
   );
 }
+      
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
+  //container: {
+    //flex: 1,
+    //backgroundColor: '#fff',
     
-  },
+  //},
 });
-//clase 4_0:35:00
+//clase 4_0:55:00

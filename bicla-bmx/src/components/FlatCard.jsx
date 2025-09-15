@@ -2,9 +2,9 @@ import { StyleSheet, Text, View } from 'react-native'
 import { colors } from '../global/colors'
 
 //componente wrapper
-const FlatCard = ({children}) => {
+const FlatCard = ({children,style }) => {
   return (
-    <View style={styles.container}>
+    <View style={{...styles.container,...style}}>
       {children}
     </View>
   )
