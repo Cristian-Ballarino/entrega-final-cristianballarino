@@ -2,16 +2,17 @@ import { StyleSheet, Text, View, FlatList, } from 'react-native'
 import products from '../data/products.json'
 import { useEffect, useState } from 'react'
 
-const ProductsScreen = () => {
-    const [productsFilteredByCategory,setProductsFilteredByCategory] = useState([])
+const ProductsScreen = ({category}) => {
+    const [productsFiltered,setProductsFiltered] = useState([])
     useEffect(()=>{
-        
+        const productsFilteredByCategory = products.filter(product=>product.category.toLowerCase()===category.toLowerCase())
+        setProductsFiltered(productsFilteredByCategory)
     },[])
 
   return (
     <View>
       <FlatList
-      data={products}
+      data={productsFiltered}
       keyExtractor={item=>item.id}
       renderItem={({item})=><Text>{item.title}</Text>}
       />
