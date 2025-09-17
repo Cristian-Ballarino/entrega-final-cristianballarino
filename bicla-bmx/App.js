@@ -1,15 +1,35 @@
+import { useFonts } from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet } from 'react-native';
 import Header from './src/components/Header';
 import CategoriesScreen from './src/screens/CategoriesScreen';
 import ProductsScreen from './src/screens/ProductsScreen';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
   const [categorySelected, setCategorySelected] = useState("")
+  const [loaded, error] = useFonts({
+    'Karla-Regular': require('./assets/fonts/Karla-Regular.ttf'),
+    'Karla-Bold': require('./assets/fonts/Karla-Bold.ttf'),
+    'Karla-Light': require('./assets/fonts/Karla-Light.ttf'),
+    'Karla-Italic': require('./assets/fonts/Karla-Italic.ttf'),
+    'HappyMonkey-Regular': require('./assets/fonts/HappyMonkey-Regular.ttf'),
+  });
  
-  return (
+  useEffect(() => {
+    if (loaded || error) {
+      SplashScreen.hideAsync();
+    }
+  }, [loaded, error]);
+
+  if (!loaded && !error) {
+    return null;
+  }
+
+return (
     <>
        <StatusBar style="light" />
       {
@@ -34,4 +54,4 @@ export default function App() {
 const styles = StyleSheet.create({
 });
 
-//clase 4_1:05:00
+//clase 4_1:27:00
