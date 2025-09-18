@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
         alignItems:"center"
     },
     title:{
-        fontSize:24,
+        fontSize:26,
         color:colors.white,
-        fontFamily: "Karla-Italic.ttf"
+        fontFamily: "HappyMonkey-Regular"
     },
     subtitle:{
       fontSize:14,
-      color:colors.white,
-      fontFamily: "Karla-Bold.ttf"
+      color:colors.white
     }
+      
 })

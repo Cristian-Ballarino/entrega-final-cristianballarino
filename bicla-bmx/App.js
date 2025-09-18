@@ -54,4 +54,4 @@ return (
 const styles = StyleSheet.create({
 });
 
-//clase 4_1:27:00
+//clase 4_2:00:40
